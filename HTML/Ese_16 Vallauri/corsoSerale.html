@@ -1,0 +1,91 @@
+<!DOCTYPE html>        <!--  documento html5  --> 
+<html lang="it"> 
+   <head> 
+        <meta charset="UTF-8" /> 
+        <title>  Corso serale  </title> 
+   </head> 
+   <body> 
+       <h1 align="center"> Modulo di iscrizione al Corso Serale </h1>
+	   <form action="IscrizioneOk.html">
+	   <table>
+			<tr>
+				<td width="60"> Cognome </td>
+				<td width="160" colspan="3"> <input type="text" id="txtNome" name="txtNome" maxlength="12" required autocomplete="off" placeholder="Inserisci il tuo nome"/> </td>
+			</tr>
+			<tr>
+				<td> Nome </td>
+				<td colspan="3"> <input type="text" id="txtNome" name="txtNome" maxlength="12" required autocomplete="off" placeholder="Inserisci il tuo nome"/> </td>
+			</tr>
+			<tr>
+				<td rowspan="2"> Data di nascita </td>
+				<td> Giorno </td>
+				<td> Mese </td>
+				<td> Anno </td>
+			</tr>
+			<tr>
+				<td> <input type="number" id="txtGiorno" name="txtGiorno" min="1" max="31"> </td>
+				<td> <input type="number" id="txtMese" name="txtMese" min="1" max="12"> </td>
+				<td> <input type="number" id="txtAnno" name="txtAnno" min="1950" max="2002"> </td>
+			</tr>
+			<tr>
+				<td> <p> Genere </p> </td>
+				<td> 
+					<label for="optM"> M </label>
+					<input type="radio" id="optM" name="optGenere" value="M" required > 
+					<label for="optF"> F </label>
+					<input type="radio" id="optF" name="optGenere" value="F" required > 
+				</td>
+			</tr>
+			<tr>
+				<td> 
+					<label for="lstProvincia"> Provincia di residenza </label>
+				</td>
+				<td> 
+					<select id="lstProvincia" name="lstProvincia">
+					<option> CN </option>
+					<option> TO </option>
+					<option> AT </option>
+					<option> AL </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4"> Secondo quali modalità si desidera ricevere maggiori informazioni? </td>
+			</tr>
+			<tr>
+				<td rowspan="3"> (sono ammesse scelte multiple) </td>
+				<td>
+					<label for="chkPostaOrdinaria"> Posta ordinaria</label>
+					<input type="checkbox" id="chkPostaOrdinaria" name="chkPostaOrdinaria" autocomplete="off">
+					&nbsp; &nbsp; &nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="chkPostaElettronica"> Posta elettronica </label>
+					<input type="checkbox" id="chkPostaElettronica" name="chkPostaElettronica" autocomplete="off">
+					&nbsp; &nbsp; &nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="chkTelefono"> Telefono </label>
+					<input type="checkbox" id="chkTelefono" name="chkTelefono" autocomplete="off"/>
+				</td>
+			</tr>
+			<tr>
+				<td> 
+					<label for="txtCommenti"> Note (specificare eventuali richieste particolari) </label>
+					<textarea id="txtCommenti" name="txtCommenti" cols="50" rows="7" placeholder="Inserisci qui i tuoi commenti" autocomplete="off">
+					</textarea> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="Invia">
+				</td>
+			</tr>
+	   </table>
+	   </form>
+   </body> 
+</html> 

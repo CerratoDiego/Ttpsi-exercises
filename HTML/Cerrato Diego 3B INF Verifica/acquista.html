@@ -1,0 +1,50 @@
+<!DOCTYPE html>        <!--  documento html5  --> 
+<html lang="it"> 
+   <head> 
+        <meta charset="UTF-8" /> 
+        <title>  Amazon  </title> 
+   </head> 
+   <body> 
+       <img src="img/amazon.png" usemap="#amazon">
+		<map name="amazon">
+		<area target="" alt="" title="" href="acquista.html" coords="1448,14,1546,47" shape="rect">
+		</map> 
+		</img>
+       <h1 align="center"> Inserisci i dati relativi all'acquisto </h1>
+	   <form action="conferma.html">
+			<table align="center">
+				<tr>
+					<td rowspan="2"> Luogo di spedizione: </td>
+					<td> <input type="radio" id="optDomicilio" name="optLuogo" value="Domicilio" required autocomplete="off"/>  <label for="optDomicilio"> domicilio </label> </td>
+				</tr>
+				<tr>
+					<td> <input type="radio" id="optUfficio" name="optLuogo" value="Ufficio" required autocomplete="off"/>  <label for="optUfficio"> ufficio postale </label> </td>
+				</tr>
+				<tr>
+					<td rowspan="2"> Opzioni aggiuntive: </td>
+					<td> <input type="checkbox" id="chkAssicurazione" name="chkAssicurazione" autocomplete="off"/>  <label for="chkAssicurazione"> assicurazione </label> </td>
+				</tr>
+				<tr>
+					<td> <input type="checkbox" id="chkConsegna" name="chkConsegna" autocomplete="off"/>  <label for="chkConsegna"> consegna veloce </label> </td>
+				</tr>
+				<tr>
+					<td> Tipo di pagamento </td>
+					<td> 
+					<select id="lstPagamento" name="lstPagamento">
+					<option> visa </option>
+					<option> mastercard </option>
+					<option>american express </option>
+					</select> 
+					</td>
+				</tr>
+				<tr>
+					<td> Note: </td>
+					<td> <textarea id="txtNote" name="txtNote" cols="30" rows="10" placeholder="Inserisci eventuali note" autocomplete="off"> </textarea> </td>
+				</tr>
+				<tr>
+					<td> <input type="submit" value="Invia"/> </td>
+				</tr>
+			</table>
+	   </form>
+   </body> 
+</html> 

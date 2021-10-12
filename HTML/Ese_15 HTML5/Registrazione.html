@@ -1,0 +1,40 @@
+<!DOCTYPE html>        <!--  documento html5  --> 
+<html lang="it"> 
+   <head> 
+        <meta charset="UTF-8" /> 
+        <title>  Registrazione  </title> 
+   </head> 
+   <body> 
+	<form action="FineRegistrazione.html">
+       <h1> Registrazione al corso di HTML </h1>
+	   <label for="txtNome"> Nominativo: </label>
+	   <input type="text" id="txtNome" name="txtNome" maxlength="12" required autocomplete="off" placeholder="Inserisci il tuo nome"/>
+	   
+	   <p> Hai già seguito altri corsi? </p>
+	   <input type="radio" id="optSì" name="optCorsi" value="Sì" required autocomplete="off"/>
+	   <label for="optSì"> Sì </label>
+	   <br/>
+	   <input type="radio" id="optNo" name="optCorsi" value="No" required autocomplete="off"/>
+	   <label for="optNo"> No </label>
+	   
+	   <p> A quali argomenti sei interessato? </p>
+		<input type="checkbox" id="chkHTML" name="chkHTML" autocomplete="off"/>
+		<label for="chkHTML"> HTML Base </label>
+		<br/>
+		<input type="checkbox" id="chkCSS" name="chkCSS" autocomplete="off"/>
+		<label for="chkCSS"> CSS </label>
+		<br/>
+		<input type="checkbox" id="chkJavaScript" name="chkJavaScript" autocomplete="off"/>
+		<label for="chkJavaScript"> Java Script </label>
+		
+		<br/> <br/>
+		<input type="submit" value="Invia"/>
+		<input type="reset" value="Reset"/>
+		<img src="img/ritorna.gif" usemap="#Ritorna" width="80">
+		<map name="Ritorna">
+		<area target="" alt="" title="" href="index.html" coords="1,-1,99,48" shape="rect">
+		</map> 
+		</img>
+	</form>
+   </body> 
+</html> 

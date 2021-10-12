@@ -1,0 +1,65 @@
+<!DOCTYPE html>        <!--  documento html5  --> 
+<html lang="it"> 
+   <head> 
+        <meta charset="UTF-8" /> 
+        <title>  Invia commenti  </title> 
+   </head> 
+   <body> 
+	<br/>
+       <table align="center" border="1" width="70%">
+			<tr> 
+				<th rowspan="2" width="15%"> Roberto Benigni </th>
+				<th colspan="2"> Altri libri </th>
+			</tr>
+			<tr> 
+				<th width="30%"> Titolo </th>
+				<th width="55%"> Descrizione </th>
+			</tr>
+			<tr> 
+				<td> 1988 </td>
+				<td> <i> <b> Il piccolo diavolo </i> </b> </td>
+				<td> Padre Maurizio viene chiamato a compiere 
+				un esorcismo per liberare una donna dall'
+				essere che la stava possedendo </td>
+			</tr>
+			<tr> 
+				<td> 1994 </td>
+				<td> <i> <b> Il mostro </i> </b> </td>
+				<td> Loris è un giovane disoccupato che si guadagna 
+				da vivere con lavori saltuari. Una serie di equivoci porta 
+				la polizia a sospettare che Loris sia il maniaco sessuale 
+				e serial killer di donne che terrorizza il quartiere </td>
+			</tr>
+			<tr> 
+				<td> 2005 </td>
+				<td> <i> <b> La tigre e la neve </i> </b> </td>
+				<td> Attilio de Giovanni, svagato ed estroso professore di poesia, 
+				divorziato e padre di due preadolescenti, è innamorato perdutamente 
+				di Vittoria, una scrittrice che gli appare in sogno tutte le notti. </td>
+			</tr>
+	   </table>
+	   <br/>
+	   <form>
+			<label for="txtFilm"> Quale fra i film precedenti ti è piaciuto di più? </label>
+			<input type="text" id="txtFilm" maxlength="18"/>
+			<p>
+			Lo hai visto al cinema?
+				<input type="radio" name="optFilm" value="sì"/> sì
+				<input type="radio" name="optFilm" value="no"/> no
+			</p>
+			<p>
+				Lo hai visto più volte?
+				<input type="checkbox" name="chkFilm" value="sì"/> sì
+			</p>
+			<label for="txtVoto"> Assegna un voto da 1 a 10: </label>
+			<input type="number" id="txtVoto" min="1" max="10"/>
+			<input type="submit" value="Invia">
+			<img src="ritorna.gif" usemap="#image-map">
+
+				<map name="image-map">
+				<area target="" alt="" title="" href="index.html" coords="95,49,3,3" shape="rect">
+				</map>
+			</img>
+	   </form>
+   </body> 
+</html> 
