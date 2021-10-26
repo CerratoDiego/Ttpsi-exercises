@@ -1,2 +1,2 @@
-# Ttpsi-exercises
+# Tpsit-exercises
  
