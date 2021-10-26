@@ -1,0 +1,58 @@
+* {
+	/*CSS reset*/
+	
+	padding:0;
+	margin:0;
+}
+
+th {
+	background-color:#777;
+	padding:10px;
+}
+
+.italiano {
+	background-color:#AAF;
+}
+
+.sistemi {
+	background-color:#AFA;
+}
+
+.telecomunicazioni {
+	background-color:#FFF;
+}
+
+.tpsit {
+	background-color:#FAF;
+}
+
+.ginnastica {
+	background-color:#FFA;
+}
+
+.religione {
+	background-color:#AFF;
+}
+
+.informatica {
+	background-color:#F00;
+}
+
+.matematica {
+	background-color:#0F0;
+}
+
+.inglese {
+	background-color:#00F;
+}
+
+.free {
+	background-color:#EEE;
+}
+
+td:hover {
+	background-color:#00F;
+	color:#FFF;
+	cursor:pointer;
+	text-decoration:underline;
+}
