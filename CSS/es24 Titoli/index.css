@@ -1,0 +1,77 @@
+* {
+	/*CSS reset*/
+	
+	padding:0;
+	margin:0;
+}
+
+p {
+	width:400px;
+	font-family:verdana,arial;
+	font-size:12;
+	font-style:italic;
+	color:#555;
+	letter-spacing:-1px;
+	word-spacing:-1px;
+	margin:10px 15px;
+	padding:0;
+	text-align:center;
+}
+
+div {
+	width:400px;
+	font-family:verdana,arial;
+	font-size:12pt;
+	font-style:italic;
+	color:#555;
+	letter-spacing:-1px;
+	word-spacing:-1px;
+	margin:10px 15px;
+	padding:0;
+	text-align:center;
+}
+
+.titolo {
+	font-size:24pt;
+	color:red;
+	font-weight:bold;
+	font-style:normal;
+	background-color:#DDD;
+}
+
+#sottotitolo {
+	font-size:18pt;
+	color:rgb(0, 255, 0);
+	font-weight:bold;
+	border:1px solid black;
+	padding:15px, 10px;
+	background-color:#FFB
+}
+
+.div1 {
+	width:380px;
+	border:2px dashed black;
+	padding:20px 10px;
+	color:#00F;
+	height:100px;
+	letter-spacing:-1px;
+	word-spacing:-2px;
+	overflow:auto;
+}
+
+#pulsante {
+	width:200px;
+	height:40px;
+	margin-left:100px;
+	background-color:#CCC;
+	border:1px solid #999;
+	border-left-width:4px;
+	color:#558;
+	text-decoration:none;
+}
+
+#pulsante:hover{
+	text-decoration:underline;
+	border-left-color:#556;
+	background-color:#AAA;
+}
