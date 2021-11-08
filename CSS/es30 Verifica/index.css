@@ -6,16 +6,14 @@
 }
 
 #wrapper {
-	padding:0;
-	margin:0;
+	width: 760px;
+	margin: 0px auto;
 	border:0;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 11pt;
 }
 
 div#contenitore {
-	width: 760px;
-	margin: auto;
 	background-color: #bbb;
 	border: 2px solid black;
 }
@@ -38,7 +36,7 @@ h2 {
 	text-align: center;
 }
 
-div#menu {
+#menu {
 	font-size: 12pt;
 	padding: 30px 0px;
 	text-align: center;
