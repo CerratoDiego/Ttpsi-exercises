@@ -1,0 +1,22 @@
+<!DOCTYPE html>        <!--  documento html5  --> 
+<html lang="it"> 
+   <head> 
+        <meta charset="UTF-8" /> 
+        <title>  es38  </title> 
+		<link rel="stylesheet" href="index.css">
+   </head> 
+   <body> 
+       <h1> Nuovi input tag HTML 5 </h1>
+       <form id="wrapper" action="Pagina2.html">
+           <!-- name serve per inviare il contenuto del controllo al server, mentre l'id serve per associare una label-->
+           <label for="txtUser">Nome:</label>
+           <input type="text" name="txtUser" id="txtUser" pattern="[a-z]{1}[a-z_]{2,19}" title="Inserire una stringa minuscola tra 3 e 20">
+           <br><br>
+           <label for="txtEta">Età:</label>
+           <input type="number" name="txtEta" id="txtEta" min="15" max="90" step="5">
+           <br><br>
+           <label for="txtInvia"></label>
+           <input type="submit" value="INVIA">
+       </form>
+   </body> 
+</html> 
