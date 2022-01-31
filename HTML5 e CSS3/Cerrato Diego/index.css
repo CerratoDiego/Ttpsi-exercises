@@ -1,0 +1,201 @@
+* {
+	/*CSS reset*/
+	
+	padding:0;
+	margin:0;
+}
+
+html, body, #wrapper {
+	height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+#wrapper {
+	max-width: 1024px;
+	margin: auto;
+}
+
+/*----------------------HEADER---------------------*/
+
+#wrapper header > div:nth-of-type(1) {
+	max-width: 90%;
+	background-image: url(img/vallauri.png);
+	margin: 10px auto;
+	font-size: 0.8em;
+	color: #777;
+	text-align: right;
+	padding-top: 150px;
+}
+
+/*----------------------NAV---------------------*/
+
+#wrapper header nav {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 10px 5px;
+	background-color: rgb(211, 224, 241);
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+#wrapper header nav ul li a {
+	display: block;
+	width: auto;
+	height: 18px;
+	text-align: center;
+	line-height: 18px;
+	padding: 10px;
+	margin: 4px;
+	font-size: 0.9em;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 3px #000;
+	background-image: linear-gradient(to right, #55f, #fff 55%, #55f);
+	color: #000;
+	text-decoration: none;
+	transition: background-image 0.5s, color 0.5s, transform 0.5s;
+}
+
+#wrapper header nav ul li a:hover {
+	background-image: linear-gradient(to right, #fff, #55f 55%, #fff);
+	color: #ff0;
+	transform: skew(6%);
+	cursor: pointer;
+}
+
+#wrapper header nav ul li {
+	display: inline-block;
+}
+
+/*----------------------MAIN SECTION---------------------*/
+
+#wrapper section#mainSection {
+	float: left;
+	max-width: 610px;
+	height: 600px;
+	margin: 10px;
+	padding-left: 20px;
+	overflow: auto;
+}
+
+#wrapper section#mainSection article {
+	padding: 8px;
+	border-bottom: 1px solid #333;
+	padding-bottom: 7%;
+}
+
+#wrapper section#mainSection article img {
+	float: left;
+	padding: 6px;
+}
+
+#wrapper section#mainSection article h2 {
+	font-size: 1em;
+	padding: 4px;
+}
+
+#wrapper section#mainSection article p {
+	font-size: 0.8em;
+}
+
+#wrapper section#mainSection article button {
+	background-image: url(img/continua.png);
+	width: 88px;
+	height: 20px;
+	float: right;
+	border: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#wrapper section#mainSection article button:hover {
+	cursor: pointer;
+}
+
+/*----------------------ASIDE---------------------*/
+
+#wrapper aside {
+	max-width: 320px;
+	height: 400px;
+	margin: 15px;
+	margin-right: 80px;
+	padding: 10px;
+	float: right;
+}
+
+#wrapper aside section {
+	width: 220px;
+	height: 160px;
+	margin: 20px auto;
+	border-radius: 12px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#wrapper aside section:nth-of-type(1) {
+	animation: animazione1 10s linear infinite;
+	transition: background-image 0.5s;
+}
+
+@keyframes animazione1 {
+	0% {background-image: url(img/img1.jpg)}
+	20% {background-image: url(img/img1.jpg)}
+	25% {background-image: url(img/img2.jpg)}
+	45% {background-image: url(img/img2.jpg)}
+	50% {background-image: url(img/img3.jpg)}
+	70% {background-image: url(img/img3.jpg)}
+	75% {background-image: url(img/img4.jpg)}
+	95% {background-image: url(img/img4.jpg)}
+	100% {background-image: url(img/img1.jpg)}
+}
+
+#wrapper aside section:nth-of-type(2) {
+	animation: animazione2 10s 1s linear infinite;
+}
+
+@keyframes animazione2 {
+	0% {background-image: url(img/img3.jpg)}
+	20% {background-image: url(img/img3.jpg)}
+	25% {background-image: url(img/img4.jpg)}
+	45% {background-image: url(img/img4.jpg)}
+	50% {background-image: url(img/img5.jpg)}
+	70% {background-image: url(img/img5.jpg)}
+	75% {background-image: url(img/img6.jpg)}
+	95% {background-image: url(img/img6.jpg)}
+	100% {background-image: url(img/img3.jpg)}
+}
+
+/*----------------------MEDIA QUERY---------------------*/
+
+@media screen and (max-device-width:940px) {
+	#wrapper aside {
+		display: none;
+	}
+
+	#wrapper section#mainSection {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-device-width:480px) {
+	#wrapper header nav ul li {
+		display: none;
+	}
+
+	#wrapper header nav > div {
+		background-image: url(img/burgerButton.png);
+		width: 50px;
+		height: 40px;
+		margin-left: 82%;
+	}
+
+	#wrapper header nav > div:hover + ul li {
+		display: block;
+	}
+}
