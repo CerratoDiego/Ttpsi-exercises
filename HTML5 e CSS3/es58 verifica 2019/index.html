@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+     <title>Home Banking</title> 
+	 <link rel="stylesheet" href="index.css"  />
+  </head>
+  
+  <body>
+  
+    <div id="wrapper">
+		<header> 
+			<div onclick="window.location.href='https://www.unicredit.it/it/privati.html'"> </div>
+			<h1> Internet Banking </h1>
+		</header>
+		
+		<nav>
+			<h1> Menù </h1>
+			<ul>
+				<li><a href="#">Conti Correnti</a></li>
+				<li><a href="#">Carte</a></li>
+				<li><a href="#">Prestiti</a></li>
+				<li><a href="#">Mutui</a></li>
+				<li><a href="#">Investimenti e risparmio</a></li>
+				<li><a href="#">Assicurazioni</a></li>
+				<li><a href="#">Internet Mobile e Self Service</a></li>
+			</ul>				
+		</nav>
+	
+		<section>
+			<h1> Caratteristiche del Prestito </h1>
+			
+			<form>	
+				<label for="txtImporto"> Importo €: </label>
+				<input type="number" id="txtImporto" name="txtImporto" min="1000" step="1000" required>
+				<label for="txtData"> Data di scadenza: </label>
+				<input type="date" id="txtData" name="txtData">
+				<label for="txtColore"> Colore del contratto: </label>
+				<input type="color" id="txtColore" name="txtColore" required>
+				<label for="lstTipologia"> Tipologia: </label>
+				<input type="text" id="lstTipologia" name="lstTipologia" list="listaValori">
+				<datalist id="listaValori">
+				   <option value="tasso fisso">  </option>
+				   <option value="tasso variabile">  </option>
+				   <option value="tasso misto">  </option>
+				</datalist>
+				<input type="submit" value="invia">		
+			</form>
+	
+		</section>  
+		
+		<aside>
+			<h1> Pacchetti in promozione </h1>
+			<div> </div>
+			<div> <p>Commissioni azzerate</p> </div>
+			<div> </div>
+		</aside>  
+		
+		<footer> 
+			<h2> Sito realizzato a cura della classe 3 inf B </h2>
+		</footer>
+		
+	</div>   
+
+  </body>
+</html>

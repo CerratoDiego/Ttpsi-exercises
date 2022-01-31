@@ -1,0 +1,215 @@
+* {
+	/*CSS reset*/
+	
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	text-align: center;
+	margin: 15px;
+}
+
+html, body, #wrapper {
+	height: 100%;
+}
+
+body {
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11pt;
+	background-image: url(img/sfondo.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+#wrapper {
+	width: 1024px;
+	height: 100%;
+	margin: auto;
+	border: 1px solid #00f;
+}
+
+#wrapper header h1 {
+	font-size: 30pt;
+	color: #00f;
+	margin: auto;
+	padding: 30px 0;
+	text-shadow: 3px 3px 4px #009;
+}
+
+/*BARRA DI NAVIGAZIONE*/
+
+nav {
+	width: 960px;
+	height: 100px;
+	margin: auto;
+	padding: 15px;
+	background-color: rgba(40, 40, 40, 0.5);
+	border-radius: 12px;
+	box-shadow: 3px 3px 4px #000;
+}
+
+#wrapper header nav h3 {
+	color: #0dd;
+}
+
+#wrapper header nav ul {
+	border: 1px solid #00f;
+	float: right;
+	width: fit-content;
+}
+
+#wrapper header nav ul li a {
+	display: block;
+	width: 80px;
+	height: 35px;
+	font-weight: bold;
+	color: #0dd;
+	text-align: center;
+	line-height: 35px;
+	margin: 10px;
+	padding: 10px;
+	background-image: radial-gradient(#333, #eee);
+	border-radius: 5px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 3px #000;
+	text-decoration: none;
+	transition: background-image 0.5s, transform 0.5s, color 0.5s, text-decoration 0.5s;
+	user-select: none;
+}
+
+#wrapper header nav ul li {
+	display: inline-block;
+}
+
+#wrapper header nav ul li a:hover {
+	background-image: radial-gradient(#00f, #ddf);
+	transform: scale(1.06);
+	color: #ff0;
+	text-decoration: underline;
+}
+
+/*SEZIONE PRINCIPALE*/
+
+#wrapper #mainSection {
+	float: left;
+	width: 615px;
+	margin: 15px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 12px;
+	box-shadow: 3px 3px 4px #333;
+}
+
+#wrapper #mainSection h2, #wrapper #mainSection p {
+	margin: 10px;
+}
+
+#wrapper #mainSection img {
+	width: 192px;
+	margin: 4px;
+	opacity: 60%;
+	border-radius: 12px;
+	box-shadow: 2px 2px 2px #888;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+#wrapper #mainSection img:hover {
+	opacity: 100%;
+	transform: rotate(5deg);
+}
+
+/*SEZIONE LATERALE*/
+
+#wrapper aside {
+	float: right;
+	width: 310px;
+	margin: 12px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 12px;
+	box-shadow: 3px 3px 4px #333;
+}
+
+#wrapper aside #progressBar {
+	height: 20px;
+	margin: 15px;
+	background-color: #0d0;
+	animation: animazione1 3s linear infinite;
+}
+
+#wrapper aside #progressBar div {
+	width: 240px;
+}
+
+@keyframes animazione1 {
+	0% { width: 1px }
+	100% { width: 240px }
+}
+
+#wrapper aside form fieldset input[type="submit"] {
+	font-weight: bold;
+	padding: 5px 15px;
+	margin: 10px;
+	background-color: #bbb;
+	border-radius: 8px;
+	box-shadow: 3px 3px 2px #0ff,
+				6px 6px 2px #000;
+	cursor: pointer;
+	float: right;
+}
+
+#wrapper aside form fieldset input[type="number"] {
+	width: 100px;
+}
+
+#wrapper aside form fieldset span:nth-of-type(2) {
+	margin-left: 125px;
+}
+
+#wrapper aside ul li {
+	width: 60px;
+	height: 55px;
+	float: left;
+}
+
+#wrapper aside ul {
+	list-style-type: none;
+}
+
+#wrapper aside ul li a div {
+	background-image: url(img/socialNetworks.png);
+	width: 60px;
+	height: 47px;
+	margin-top: 10px;
+}
+
+#wrapper aside ul li.twitter a div  {
+	background-position-x: 0px;
+	background-position-y: 0px;
+}
+
+#wrapper aside ul li.twitter a div:hover {
+	background-position-x: 0px;
+	background-position-y: -57px;
+}
+
+#wrapper aside ul li.facebook a div {
+	background-position-x: -60px;
+	background-position-y: 0px;
+}
+
+#wrapper aside ul li.facebook a div:hover {
+	background-position: -60px;
+	background-position-y: -57px;
+}
+
+#wrapper aside ul li.linkedin a div {
+	background-position-x: -120px;
+	background-position-y: 0px;
+}
+
+#wrapper aside ul li.linkedin a div:hover {
+	background-position-x: -120px;
+	background-position-y: -57px;
+}

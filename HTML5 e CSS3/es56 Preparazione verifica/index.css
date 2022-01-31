@@ -1,0 +1,124 @@
+* {
+	/*CSS reset*/
+	
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	text-align: center;
+	margin: 15px;
+}
+
+html, body, #wrapper {
+	height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	line-height: 1.6em;
+	background-image: url(img/sky.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#wrapper {
+	width: 980px;
+	margin: auto;
+}
+
+#wrapper header {
+	margin: 15px;
+}
+
+#wrapper header h1 {
+	font-size: 30pt;
+	text-align: center;
+	padding: 50px 0;
+	color: #00f;
+	text-shadow: 3px 3px 4px #000;
+}
+
+#wrapper header nav {
+	padding: 20px;
+	background-color: rgba(16, 16, 32, 0.5);
+	border-radius: 10px;
+	box-shadow: 3px 3px 4px #000;
+	color: #aaf;
+	height: 100px;
+}
+
+#wrapper header nav ul {
+	width: 440px;
+	font-size: 12pt;
+	border: 2px solid #f00;
+	float: right;
+	border-radius: 10px;
+}
+
+#wrapper header nav ul li a {
+	display: block;
+	width: 100px;
+	height: 40px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+	margin: 10px;
+	padding: 10px;
+	background-image: radial-gradient(#55c, #116);
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px #000;
+	transition: background-image 0.5s, background-color 0.5s, scale 0.5s, color 0.5s;
+}
+
+#wrapper header nav ul li a:hover {
+	background-image: none;
+	background-color: #04a;
+	scale: 1.1;
+	color: #ff0;
+}
+
+#wrapper header nav ul li {
+	display: inline-block;
+}
+
+#wrapper section {
+	float: left;
+	width: 600px;
+	margin: 15px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #000;
+}
+
+#wrapper section h2 {
+	margin: 10px 0 20px 0;
+}
+
+#wrapper aside {
+	float: right;
+	width: 200px;
+	margin-left: 30px;
+}
+
+#wrapper aside div {
+	height: 200px;
+	overflow: auto;
+}
+
+#wrapper aside h2 {
+	margin: 20px 0 10px 0;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+#wrapper aside img {
+	width: 160px;
+	transition: transform 2s;
+}
+
+#wrapper aside img:hover {
+	transform: rotate(10deg);
+}

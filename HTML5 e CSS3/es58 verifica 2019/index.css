@@ -1,0 +1,235 @@
+* {
+	/*CSS reset*/
+	
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	text-align: center;
+	margin: 15px;
+}
+
+html, body, #wrapper {
+	height: 100%;
+}
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+	background-image: url(img/sfondo.jpg);
+	background-position: left;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div#wrapper {
+	width: 1000px;
+	margin: auto;
+}
+
+header, nav, section, aside, footer{
+	border-radius: 10px;
+}
+
+header {
+	height: 140px;
+	margin-bottom: 10px;
+	background-color: rgb(200, 255, 220);
+}
+
+header h1 {
+	font-size: 38pt;
+	line-height: 140px;
+}
+
+header div {
+	width: 150px;
+	height: 60px;
+	float: right;
+	margin: 25px 50px 0 0;
+	border: 8px solid #fff;
+	margin-right: 20px;
+	animation: animazione1 2.5s linear infinite;
+	background-image: url("img/unicredit1.png");
+}
+
+header div:hover {
+	background-image: url("img/unicredit2.png");
+	cursor: pointer;
+}
+
+@keyframes animazione1 {
+	0% { border-right-color: white; border-left-color: white;
+		border-top-color: red; border-bottom-color: red;}
+	50% { border-right-color: red; border-left-color: red;
+		border-top-color: white; border-bottom-color: white;}
+	100% { border-right-color: white; border-left-color: white;
+		border-top-color: red; border-bottom-color: red;}
+}
+
+nav{
+	height: 650px;
+	width: 240px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	float:left;
+	background-image: linear-gradient(to bottom, rgb(200, 255, 220), rgb(100, 127, 110));
+}
+
+nav h1 {
+	padding: 20px;
+	font-size: 12pt;
+}
+
+nav ul {
+	width: 210px;
+	padding: 10px;
+	margin: auto;
+}
+
+nav ul li a {
+	display: block;
+	width: 190px;
+	height: 45px;
+	padding-top: 25px;
+	padding-left: 10px;
+	color: #aaa;
+	background-color: #444;
+	border-bottom: 1px solid #666;
+	border-left: 3px solid #444;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+nav ul li:nth-of-type(3) a {
+	background-color: #222;
+	border-left: 3px solid #f00;
+}
+
+nav ul li a:hover {
+	background-color: #222;
+	border-left: 3px solid #f00;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+aside{
+	width: 180px;
+	height: 650px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	text-align: center;
+	float: right;
+	background-image: linear-gradient(to bottom, rgb(200, 255, 220), rgb(100, 127, 110));
+	perspective: 500px;
+}
+
+aside h1 {
+	padding: 20px;
+	font-size: 12pt;
+}
+
+aside div {
+	width: 110px;
+	height: 110px;
+	margin: 10px auto;
+	opacity: 50%;
+	background-size: cover;
+}
+
+aside div:nth-of-type(1) {
+	background-image: url(img/img1.jpg);
+}
+
+aside div:nth-of-type(1):hover {
+	transform-style: preserve-3d;
+	transform: rotateY(45deg);
+	opacity: 100%;
+}
+
+aside div:nth-of-type(2) {
+	background-image: url(img/img2.jpg);
+}
+
+aside div:nth-of-type(2) p {
+	display: none;
+}
+
+aside div:nth-of-type(2):hover {
+	background-image: radial-gradient(#f00, #fff 40%, #f00 80%);
+	opacity: 100%;
+	text-align: center;
+}
+
+aside div:nth-of-type(2):hover p {
+	display: block;
+	padding-top: 35px;
+}
+
+aside div:nth-of-type(3) {
+	background-image: url(img/img3.jpg);
+}
+
+section{
+	height: 650px;
+	margin: 10px;
+	width: 540px;
+	float: left;
+	text-align: center;
+	background-image: linear-gradient(to bottom, rgb(200, 255, 220), rgb(100, 127, 110));
+}
+
+section h1 {
+	padding: 20px;
+	grid-column: span 2;
+	font-size: 12pt;
+}
+
+section form {
+	height: 500px;
+	margin-left: 100px;
+	font-size: 11pt;
+	display: grid;
+	grid-template-columns: 200px 160px;
+	grid-template-rows: 30px 30px 30px 30px 30px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+section form label {
+	width: 200px;
+	font-style: italic;
+	text-align: right;
+}
+
+section form input {
+	width: 160px;
+}
+
+section form input[type="submit"] {
+	width: 365px;
+	height: 30px;
+	margin-top: 100px;
+	color: #aaa;
+	background-color: #444;
+	font-weight: bold;
+}
+
+footer {
+	width: 100%;
+	float: left;
+	padding: 20px 0;
+	text-align: center;
+	margin-top: 10px;
+	font-style: italic;
+	letter-spacing: -1px;
+	background-color: rgb(100, 127, 110);
+}
+
+footer h2 {
+	font-weight: lighter;
+}
