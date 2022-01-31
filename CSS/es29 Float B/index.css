@@ -1,0 +1,55 @@
+* {
+	/*CSS reset*/
+	
+	padding:0;
+	margin:2%;
+}
+
+#wrapper {
+	width: 50%;
+	margin-left: 25%;
+	background-color: #777;
+	border: 1px solid red;
+	font-size: 20pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+header, nav, footer {
+	padding: 37px; /*[100 - 26(font-size in pixel)] / 2*/
+}
+
+header {
+	background-color: #ff0;
+}
+
+nav {
+	background-color: #0f0;
+}
+
+footer {
+	background-color: #00f;
+}
+
+section {
+	background-color: #f0f;
+	border: 1px solid black;
+}
+
+section p {
+	padding: 25px;
+}
+
+article {
+	background-color: #0ff;
+	width: 60%;
+	height: 160px;
+}
+
+aside {
+	background-color: #080;
+	width: 30%;
+	height: 335px; /*160 + 160 + 15*/
+	float: right;	/*float non viene considerato nel rendering della pagina*/
+	margin-top: -1px;
+}
