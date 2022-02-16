@@ -28,11 +28,22 @@ function init() {
 
 function controlla() {
 	let cont = 0
+	let temp = []
+	let presente = false
 
 	for(let i = 0; i < 3; i++)
 	{
 		if(vet.includes(parseInt(_txtN[i].value)))
-			cont++;
+		{
+			for(let j = 0; j < 3; j++)
+				if(_txtN[i].value == temp[j])
+					presente = true
+			if(!presente)
+			{
+				cont++
+				temp[i] = _txtN[i].value
+			}
+		}
 		_chkN[i].checked = false
 	}
 	
