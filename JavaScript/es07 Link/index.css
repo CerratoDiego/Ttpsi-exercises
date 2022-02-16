@@ -1,0 +1,46 @@
+ese 07 Link
+Roberto Mana
+•
+24 gen
+index.css
+Foglio di stile
+index.html
+HTML
+Commenti sul corso
+ese 07 Link
+
+* {
+	padding:0;
+	margin:0;
+}
+
+html{
+	/* E' obbligatorio se il contenuto del wrapper non copre l'intera pagina  */
+	height:100%;    
+}
+
+body{
+	height:100%;    
+	background-color: #ccc;
+	/* elimina la barra di scorrimento verticale  */
+	overflow:hidden;	
+}
+
+#wrapper{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	background-color: white;
+}       
+
+#wrapper h1{
+	text-align: center;
+	padding:15px;
+}
+
+/* SOLO i figli diretti */
+#wrapper > *{
+	margin: 12px;
+}
+
+
