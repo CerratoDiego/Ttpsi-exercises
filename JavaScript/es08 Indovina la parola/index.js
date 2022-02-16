@@ -14,7 +14,7 @@ let _txtIns
 window.onload = function() {
 	let pos = generaNumero(0, vet.length)
 	parolaSegreta = vet[pos]
-	parolaSegreta = parolaSegreta.toUpperCase() 
+	parolaSegreta = parolaSegreta.toUpperCase()
 
 	_txtPunti = document.getElementById("txtPunti")
 	_txtPunti.value = punti
