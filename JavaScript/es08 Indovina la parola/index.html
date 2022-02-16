@@ -1,0 +1,57 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Indovina la parola </title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1 align="center"> Indovina la Parola</h1>
+        <p> 
+	        <input type="button" value="Genera Parola Segreta" onclick="inizializza()" > 
+	        &nbsp;&nbsp;&nbsp;&nbsp; 
+	        Punti : <input type="text" id="txtPunti" readonly>
+        </p>
+        <p> 
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/> 
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/>
+            <input type="text" name="txtCar" autocomplete="off"/> 
+        </p>
+        <p> 
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+	        <input type="checkbox" name="chkRis" autocomplete="off">
+        </p>
+        <p>
+	        <input type="text" id="txtIns" autocomplete="off">
+	        <input type="button" value="Invia" onClick="confronta()" id="btnInvia" disabled />
+        </p>
+        <p> 
+	        <input type="button" value="Risposta" onClick="rispondi()" id="btnRisposta" disabled />
+        </p>
+</div>
+</body>
+</html>
