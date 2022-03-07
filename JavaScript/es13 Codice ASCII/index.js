@@ -26,9 +26,15 @@ function genera() {
 	let value = _voci.value
 
 	let vet = value.split("-")
-	let min = vet[0]
-	let max = vet[1]
+	let min = parseInt(vet[0])
+	let max = parseInt(vet[1])
 	let aus = []
+
+	if(_voci.selectedIndex == 1)
+	{
+		min += 23
+		max += 23
+	}
 
 	let cnt = 0
 	for(let i = min; i <= max; i++)
@@ -46,7 +52,6 @@ function genera() {
 		_chkRis[i].checked = false
 	}
 	_btnControlla.disabled = true
-	//faccio poi splice
 }
 
 function check() {
