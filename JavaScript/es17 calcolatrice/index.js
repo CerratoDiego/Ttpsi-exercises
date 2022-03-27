@@ -6,6 +6,7 @@ let _btnNum
 let _btnOperatore
 let _btnCanc
 let _btnClacola
+let _btnRis
 let _txtDisplay
 let primoNumero
 let cancella = false
@@ -14,7 +15,8 @@ window.onload = function() {
 	_btnNum = document.getElementsByName("btnNum")
 	_btnOperatore = document.getElementsByName("btnOperatore")
 	_btnClacola = document.getElementById("btnRis")
-	_btnCanc = document.getElementById("btnCanc")
+	_btnCanc = document.getElementById("btnClear")
+	_btnRis = document.getElementById("btnRis")
 	_txtDisplay = document.getElementById("txtDisplay")
 
 	for(let i = 0; i < _btnNum.length; i++)
@@ -25,13 +27,22 @@ window.onload = function() {
 	{
 		_btnOperatore[i].addEventListener("click", this.esegui)
 	}
+	_btnCanc.addEventListener("click", pulisci)
+	_btnRis.addEventListener("click", calcola)
+}
+function risultato() {
+
+}
+
+function pulisci() {
+	_txtDisplay.value = ""
+	_txtDisplay.innerHTML = ""
 }
 
 function esegui() {
 	operatore = this.value
 	if(_txtDisplay.value == "")
 		_txtDisplay.value = 0
-
 	primoNumero = _txtDisplay.value
 	_txtDisplay.value = ""
 }
